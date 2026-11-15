@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bug37pva2ote0"]
+
+[ext_resource type="VideoStream" uid="uid://b613kdi1jq8o" path="res://This-isnt-over....ogv" id="1_5nx2f"]
+
+[node name="Node2D" type="Node2D" unique_id=2136610420]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=336682458]
+offset_left = -323.0
+offset_top = -309.0
+offset_right = 1597.0
+offset_bottom = 771.0
+scale = Vector2(0.6075865, 0.6232457)
+stream = ExtResource("1_5nx2f")
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=1785904787]
+offset_left = -85.0
+offset_top = -27.0
+offset_right = 139.0
+offset_bottom = 95.0
+text = "You Escaped... For Now."
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=309943081]

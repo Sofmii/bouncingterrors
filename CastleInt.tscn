@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dfp4l87snljam"]
+
+[ext_resource type="Script" uid="uid://clcroyhnhg67e" path="res://castle_int.gd" id="1_8lqmr"]
+[ext_resource type="Texture2D" uid="uid://dj4uwhw3ekmd2" path="res://bouncing terrors.png" id="1_wmcf0"]
+
+[node name="Node2D" type="Node2D" unique_id=219987220]
+script = ExtResource("1_8lqmr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1919272916]
+position = Vector2(579, 327)
+scale = Vector2(0.609375, 0.61296296)
+texture = ExtResource("1_wmcf0")
+
+[node name="EnterSlide" type="Button" parent="." unique_id=227177254]
+offset_left = 920.0
+offset_top = 92.0
+offset_right = 1150.0
+offset_bottom = 612.0
+text = "Enter Slide"
+
+[connection signal="pressed" from="EnterSlide" to="." method="_on_enter_slide_pressed"]

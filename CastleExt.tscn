@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dqsmolxlpy5cv"]
+
+[ext_resource type="Script" uid="uid://bj6u4su3koaep" path="res://castle_ext.gd" id="1_ep578"]
+[ext_resource type="Script" uid="uid://bpyct8gw5d54u" path="res://hand_rest.gd" id="1_j57b1"]
+[ext_resource type="Texture2D" uid="uid://cqry1dksg1pea" path="res://CastleExtPh (2).png" id="2_j57b1"]
+
+[node name="CastleExt" type="Node2D" unique_id=420886788]
+script = ExtResource("1_ep578")
+
+[node name="HandRest" type="CharacterBody2D" parent="." unique_id=823787724]
+script = ExtResource("1_j57b1")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=642318088]
+position = Vector2(574, 329)
+scale = Vector2(0.6114583, 0.6092592)
+texture = ExtResource("2_j57b1")
+
+[node name="EnterBC" type="Button" parent="." unique_id=2046071362]
+offset_left = 622.0
+offset_top = 297.0
+offset_right = 713.0
+offset_bottom = 451.0
+text = "Enter
+Bouncy
+Castle"
+
+[connection signal="pressed" from="EnterBC" to="." method="_on_button_pressed"]

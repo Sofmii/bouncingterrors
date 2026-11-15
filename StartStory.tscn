@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://6fq385nfp64l"]
+
+[ext_resource type="VideoStream" uid="uid://b1k5m6u3485yu" path="res://Long time no see, my friend....ogv" id="1_0u6it"]
+[ext_resource type="Script" uid="uid://balj3seixnoje" path="res://start_story.gd" id="1_s821k"]
+
+[node name="StartStory" type="Node2D" unique_id=725454160]
+script = ExtResource("1_s821k")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1537716410]
+offset_left = -656.0
+offset_top = -366.00003
+offset_right = 1264.0
+offset_bottom = 1057.8956
+scale = Vector2(0.67695284, 0.7190123)
+stream = ExtResource("1_0u6it")
+autoplay = true
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1884934009]
+zoom = Vector2(0.9, 0.9)
+
+[node name="Story2Button" type="Button" parent="." unique_id=359354457]
+offset_left = -117.0
+offset_top = 207.0
+offset_right = 129.0
+offset_bottom = 257.0
+text = "Hide and Seek...?"
+
+[connection signal="pressed" from="Story2Button" to="." method="_on_story_2_button_pressed"]

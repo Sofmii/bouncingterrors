@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://c4oknl1rtniwo"]
+
+[ext_resource type="Texture2D" uid="uid://dem4q3evmb838" path="res://bouncing terrors(3).png" id="1_14lda"]
+[ext_resource type="Script" uid="uid://64is6loxm3yn" path="res://topslide.gd" id="1_beooi"]
+
+[node name="Node2D" type="Node2D" unique_id=1382806994]
+script = ExtResource("1_beooi")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2009124696]
+position = Vector2(570, 267.99997)
+scale = Vector2(1.4203914, 0.9925925)
+texture = ExtResource("1_14lda")
+
+[node name="Button" type="Button" parent="." unique_id=1659274920]
+offset_left = 366.0
+offset_right = 672.0
+offset_bottom = 212.0
+text = "Slide Down"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

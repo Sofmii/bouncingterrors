@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bl4bcjho0ul3j"]
+
+[ext_resource type="Texture2D" uid="uid://218lc2pgt8ml" path="res://bouncing terrors(4).png" id="1_gvldb"]
+[ext_resource type="Script" uid="uid://doloay3268qda" path="res://bottomslide.gd" id="1_rf66i"]
+[ext_resource type="Texture2D" uid="uid://diixo467wettd" path="res://bouncing_terrors_5_-removebg-preview.png" id="2_smi18"]
+[ext_resource type="Texture2D" uid="uid://di2kmc3drhi5q" path="res://bouncing_terrors_7_-removebg-preview.png" id="4_f5c1s"]
+
+[node name="Node2D" type="Node2D" unique_id=646904772]
+script = ExtResource("1_rf66i")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1165065375]
+position = Vector2(573, 383)
+scale = Vector2(1.8809719, 0.8388888)
+texture = ExtResource("1_gvldb")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D" unique_id=1415026824]
+position = Vector2(61.64606, -65.649826)
+scale = Vector2(0.95159644, 2.0984771)
+texture = ExtResource("2_smi18")
+
+[node name="Button" type="Button" parent="." unique_id=1074130768]
+offset_left = 98.0
+offset_top = 390.0
+offset_right = 352.0
+offset_bottom = 623.0
+icon = ExtResource("4_f5c1s")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

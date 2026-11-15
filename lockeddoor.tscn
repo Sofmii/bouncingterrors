@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cdnp6oevj8cw0"]
+
+[ext_resource type="Texture2D" uid="uid://di40in15h33pe" path="res://bouncing terrors(6).png" id="1_bkei3"]
+
+[node name="Node2D" type="Node2D" unique_id=831033568]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1828155152]
+position = Vector2(581, 331)
+scale = Vector2(0.5989583, 0.61296296)
+texture = ExtResource("1_bkei3")

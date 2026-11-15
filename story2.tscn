@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dt8naxm0g2wqu"]
+
+[ext_resource type="Script" uid="uid://cfpec1jfykbud" path="res://story_2.gd" id="1_ndlus"]
+[ext_resource type="VideoStream" uid="uid://i6a4m3v0uvpx" path="res://Haha_-thats-right.(1).ogv" id="1_vwfy1"]
+
+[node name="Node2D" type="Node2D" unique_id=619368948]
+script = ExtResource("1_ndlus")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=568473032]
+offset_left = -580.00006
+offset_top = -324.0
+offset_right = 1340.0
+offset_bottom = 756.0
+scale = Vector2(0.60491943, 0.60278124)
+stream = ExtResource("1_vwfy1")
+autoplay = true
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1916555639]
+
+[node name="Button" type="Button" parent="." unique_id=1990491508]
+offset_left = -76.0
+offset_top = 61.0
+offset_right = 80.0
+offset_bottom = 132.0
+text = "Let The Game Begin"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
